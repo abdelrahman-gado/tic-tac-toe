@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+
+}
+
+#players-info-div {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: 1.8rem;
+    background-color:darkslategrey;
+    padding: 1.2rem;
+    border: 0.5rem yellowgreen solid;
+    border-radius: 1.5rem;
+}
+
+#player1-info-div, #player2-info-div {
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player1-name-label, #player2-name-label {
+    font-size: 2rem;
+}
+
+#player1-name, #player2-name {
+    margin: 1rem;
+}
+
+#player1-inp, #player2-inp {
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+#player1-choice-label, #player2-choice-label {
+    font-size: 2rem;
+}
+
+#player1-X, #player1-O, #player2-X, #player2-O, #startBtn {
+    width: 2.5rem;
+    margin: 0.8rem;
+    padding: 0.5rem;
+    background-color:lawngreen;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+#player1-X:active, #player1-O:active, #player2-X:active, #player2-O:active, #startBtn:active {
+    border: 2px red solid;
+    background-color: rgb(19, 93, 6);
+    color: red;
+    font-weight: 900;
+}
+
+#startBtn {
+    width: 6rem;
+    font-size: 1.8rem;
+}
