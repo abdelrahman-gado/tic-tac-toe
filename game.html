@@ -7,6 +7,66 @@
     <title>Tic Tac Toe Game</title>
 </head>
 <body>
+    <!-- Players Info-->
+    <div class="players-info-div">
+        <div class="player1-info-div">
+            <h2 class="head">Player 1</h2>
+            <h2 class="name">Name</h2>
+            <h2 class="choice">choice: </h2>
+        </div>
+        <div>
+            <h2 class="head">Player 2</h2>
+            <h2 class="name">Name</h2>
+            <h2 class="choice">choice: </h2>
+        </div>
+    </div>
+
+    <!--Game Board-->
+    <div class="game-board">
+        <table class="game-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                    <td>
+                        <input type="button" class="cell">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Game Ending Message-->
+    <div id="game-end">
+        <h1 id="winner-msg">player 1 is winner</h1>
+        <input id="restartBtn" type="button" value="restart">
+    </div>
     
 </body>
 </html>
