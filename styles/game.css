@@ -38,6 +38,8 @@ body {
 .game-board .game-table .cell {
     width: 6rem;
     height: 6rem;
+    font-size: 18px;
+    color: red;
 }
 
 .game-board .game-table .cell:hover {
