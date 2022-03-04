@@ -49,6 +49,7 @@ h1 {
     height: 2rem;
     font-size: 1rem;
     border-radius: 1rem;
+    padding-left: 12px;
 }
 
 #player1-choice-label {
