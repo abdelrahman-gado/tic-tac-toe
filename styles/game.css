@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.players-info-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.game-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.game-table tr td {
+    padding: 8px;
+}
+
+
+
+.game-board .game-table .cell {
+    width: 6rem;
+    height: 6rem;
+}
+
+.game-board .game-table .cell:hover {
+    background-color: darkgoldenrod;
+}
+
+.game-board .game-table .cell:active {
+    background-color: chartreuse;
+}
+
+.game-end {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#restartBtn {
+    margin: 2rem;
+    padding: 1.2rem;
+    border: 2px black solid;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+#restartBtn:active {
+    background-color: chartreuse;
+}
