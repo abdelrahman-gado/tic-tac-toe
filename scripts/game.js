@@ -65,17 +65,23 @@
 
     function playTurn(e) {
         
+        let winner;
+
         // change the turn every time.
         if (myGameBoard.turn === 1) {
             e.target.value = playerOne.choice;
             myGameBoard.gameBoard[e.target.dataset.index] = playerOne.choice;
-            checkWinner(myGameBoard.gameBoard, playerOne.choice, playerOne.name);
+            winner = checkWinner(myGameBoard.gameBoard, playerOne.choice, playerOne.name);
             myGameBoard.turn = 2;
         } else {
             e.target.value = playerTwo.choice;
             myGameBoard.gameBoard[e.target.dataset.index] = playerTwo.choice;
-            checkWinner(myGameBoard.gameBoard, playerTwo.choice, playerTwo.name);
+            winner = checkWinner(myGameBoard.gameBoard, playerTwo.choice, playerTwo.name);
             myGameBoard.turn = 1;
+        }
+
+        if (winner) {
+            return;
         }
         
         // disable buttons to not let players change the game.
@@ -116,7 +122,10 @@
             gameBoardDiv.style.display = "none";
             gameMsgHeading.textContent = "winner is " + playerName;
             gameEndingDiv.style.display = "flex";
+            return true;
         }
+
+        return false;
     }
     
     // factory function for players object
